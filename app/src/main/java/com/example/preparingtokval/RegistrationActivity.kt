@@ -19,24 +19,5 @@ class RegistrationActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        // Получаем ссылки на ScrollView и LinearLayout
-        val scrollView = findViewById<ScrollView>(R.id.scrollView)
-        val linearLayout = LinearLayout(this)
-        linearLayout.orientation = LinearLayout.VERTICAL
-
-        // Устанавливаем LinearLayout в качестве содержимого ScrollView
-        scrollView.addView(linearLayout)
-
-        // Добавляем элементы в LinearLayout в цикле
-        for (i in 1..10) {
-            val textView = TextView(this)
-            textView.text = "Элемент $i"
-            textView.layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            )
-            linearLayout.addView(textView)
-        }
     }
 }

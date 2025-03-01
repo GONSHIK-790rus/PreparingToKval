@@ -15,8 +15,8 @@ data class Flight(
     val endCity: String,
     val endCityCode: String,
 
-    val startDate: Instant,
-    val endDate: Instant,
+    val startDate: String,
+    val endDate: String,
 
     val price: Int
 )
