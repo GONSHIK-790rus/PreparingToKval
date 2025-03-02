@@ -1,8 +1,7 @@
-package com.example.preparingtokval.data
+package com.example.preparingtokval.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.time.Instant
 
 @Entity(tableName = "flights")
 data class Flight(

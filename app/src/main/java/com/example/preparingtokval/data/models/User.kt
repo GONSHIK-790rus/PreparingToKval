@@ -1,4 +1,4 @@
-package com.example.preparingtokval.data
+package com.example.preparingtokval.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
