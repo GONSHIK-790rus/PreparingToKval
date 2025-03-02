@@ -12,29 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PreparingToKval"
         tools:targetApi="31">
+
         <activity
-            android:name=".FavouriteActivity"
+            android:name=".ui.registration.RegistrationActivity"
             android:exported="false" />
 
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="false"/>
+            android:name=".ui.flights.FlightsActivity"
+            android:exported="false" />
 
         <activity
-            android:name=".ui.AuthorizationActivity"
-            android:exported="true"
-            >
-
-        </activity>
+            android:name=".ui.favourites.FavouritesActivity"
+            android:exported="false" />
 
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ui.authorization.AuthorizationActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.accountData.AccountDataActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
