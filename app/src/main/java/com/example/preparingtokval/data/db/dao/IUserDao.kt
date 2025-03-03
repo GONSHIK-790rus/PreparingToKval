@@ -12,7 +12,7 @@ interface IUserDao {
     suspend fun addUser(user: User)
 
     @Query("SELECT * FROM users " +
-           "WHERE (nickName = :login OR login = :login) " +
+           "WHERE (nickname = :login OR login = :login) " +
            "AND password = :password")
     suspend fun getUser(login: String, password: String): User?
 

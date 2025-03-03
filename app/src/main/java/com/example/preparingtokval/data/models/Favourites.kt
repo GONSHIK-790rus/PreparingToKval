@@ -1,5 +1,6 @@
 package com.example.preparingtokval.data.models
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
@@ -26,6 +27,8 @@ import androidx.room.Index
     ]
 )
 data class Favourites(
+    @ColumnInfo(name = "user_id")
     val userId: Int,
+    @ColumnInfo(name = "flight_search_token")
     val flightSearchToken: String
 )

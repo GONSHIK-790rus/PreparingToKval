@@ -9,14 +9,14 @@ import com.example.preparingtokval.data.models.Flight
 @Dao
 interface IFavouriteDao {
     @Query("SELECT * FROM flights " +
-            "INNER JOIN favourites ON flights.searchToken = favourites.flightSearchToken " +
-            "WHERE favourites.userId = :userId")
+           "INNER JOIN favourites ON flights.search_token = favourites.flight_search_token " +
+           "WHERE favourites.user_id = :userId")
     suspend fun getCurrentUserFavourites(userId: Int): List<Flight>
 
     @Insert
     suspend fun addToFavourite(favourite: Favourites)
 
     @Query("DELETE FROM favourites " +
-           "WHERE userId = :userId AND flightSearchToken = :token")
+           "WHERE user_id = :userId AND flight_search_token = :token")
     suspend fun removeFromFavourite(userId: Int, token: String)
 }
