@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">PreparingToKval</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_favourites">Посмотреть избранное</string>
+    <string name="show_flights">Посмотреть рейсы</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="loginTitle">Логин: </string>
+    <string name="ageTitle">Возраст: </string>
+    <string name="nickname">nickname</string>
+    <string name="exitTitle">Выход ->)</string>
+    <string name="welcome_back">С возвращением</string>
+    <string name="login_or_nickname">Логин или никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="create_nickname">Придумайте ник</string>
+    <string name="create_login">Придумайте логин</string>
+    <string name="create_password">Придумайте пароль</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="favourites">Избранное</string>
+    <string name="back_to_account">Вернуться в ЛК</string>
+    <string name="available_flights">Доступные рейсы</string>
+    <string name="u_create_account"> <u>Создать аккаунт</u> </string>
+    <string name="back_to_log_in_page"><![CDATA[<- Вернуться]]></string>
+    <string name="get_json_data">json-данные</string>
 </resources>

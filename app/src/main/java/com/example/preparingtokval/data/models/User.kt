@@ -15,6 +15,4 @@ data class User(
     val login: String,
     @ColumnInfo(name = "password")
     val password: String,
-    @ColumnInfo(name = "age")
-    val age: Int
 )

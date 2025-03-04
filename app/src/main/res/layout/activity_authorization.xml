@@ -5,6 +5,81 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.authorization.AuthorizationActivity">
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".ui.AuthorizationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/welcome_back"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:autofillHints="username"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="12"
+        android:hint="@string/login_or_nickname"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="password"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="12"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:labelFor="@+id/editTxtPassword"
+        android:text=""
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtLogin" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="@string/enter"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCreateAccount" />
+
+    <TextView
+        android:id="@+id/txtViewCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/u_create_account"
+        app:layout_constraintStart_toStartOf="@+id/editTxtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

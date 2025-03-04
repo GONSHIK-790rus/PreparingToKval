@@ -13,8 +13,13 @@ interface IUserDao {
 
     @Query("SELECT * FROM users " +
            "WHERE (nickname = :login OR login = :login) " +
-           "AND password = :password")
+           "AND password = :password " +
+           "LIMIT 1")
     suspend fun getUser(login: String, password: String): User?
+
+    @Query("SELECT nickname FROM users " +
+           "WHERE nickname = :nickName ")
+    suspend fun getNickName(nickName: String): String?
 
     @Update
     suspend fun updateUser(user: User)

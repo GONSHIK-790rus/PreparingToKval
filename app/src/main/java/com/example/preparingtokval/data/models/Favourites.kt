@@ -6,24 +6,24 @@ import androidx.room.ForeignKey
 import androidx.room.Index
 
 @Entity(tableName = "favourites",
-    primaryKeys = ["userId", "flightSearchToken"],
+    primaryKeys = ["user_id", "flight_search_token"],
     foreignKeys = [
         ForeignKey(
             entity = User::class,
             parentColumns = ["id"],
-            childColumns = ["userId"],
+            childColumns = ["user_id"],
             onDelete = ForeignKey.CASCADE
         ),
         ForeignKey(
             entity = Flight::class,
-            parentColumns = ["searchToken"],
-            childColumns = ["flightSearchToken"],
+            parentColumns = ["search_token"],
+            childColumns = ["flight_search_token"],
             onDelete = ForeignKey.CASCADE
         )
     ],
     indices = [
-        Index(value = ["userId"]),
-        Index(value = ["flightSearchToken"])
+        Index(value = ["user_id"]),
+        Index(value = ["flight_search_token"])
     ]
 )
 data class Favourites(
