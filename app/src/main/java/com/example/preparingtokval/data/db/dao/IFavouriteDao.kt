@@ -13,10 +13,15 @@ interface IFavouriteDao {
            "WHERE favourites.user_id = :userId")
     suspend fun getCurrentUserFavourites(userId: Int): List<Flight>
 
-    @Insert
-    suspend fun addToFavourite(favourite: Favourites)
+    @Query("SELECT flight_search_token FROM favourites " +
+           "WHERE flight_search_token = :flightSearchToken AND user_id = :userId")
+    suspend fun getFavouriteID(flightSearchToken: String, userId: Int): String?
+
+    @Query("INSERT INTO favourites (user_id, flight_search_token) " +
+           "VALUES (:userId, :flightSearchToken)")
+    suspend fun addToFavourite(userId: Int, flightSearchToken: String)
 
     @Query("DELETE FROM favourites " +
-           "WHERE user_id = :userId AND flight_search_token = :token")
-    suspend fun removeFromFavourite(userId: Int, token: String)
+           "WHERE user_id = :userId AND flight_search_token = :flightSearchToken")
+    suspend fun removeFromFavourite(userId: Int, flightSearchToken: String)
 }

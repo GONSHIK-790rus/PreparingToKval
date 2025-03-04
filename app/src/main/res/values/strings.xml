@@ -23,4 +23,9 @@
     <string name="u_create_account"> <u>Создать аккаунт</u> </string>
     <string name="back_to_log_in_page"><![CDATA[<- Вернуться]]></string>
     <string name="get_json_data">json-данные</string>
+    <string name="route_example"><![CDATA[Москва (MOW) -> Санкт-Петербург (LED)]]></string>
+    <string name="date_time_example">Туда: 20.07.2024 в 00:00 | Обратно: 25.07.2024 в 00:00</string>
+    <string name="example_price">Цена: 2690р</string>
+    <string name="a_symbol">A</string>
+    <string name="example_flight_number">Номер рейса: MOW2007LED2507Y100</string>
 </resources>

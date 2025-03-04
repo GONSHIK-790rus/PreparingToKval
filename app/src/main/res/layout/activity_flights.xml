@@ -53,6 +53,7 @@
         android:backgroundTint="@android:color/holo_blue_light"
         android:text="@string/get_json_data"
         android:textColor="@color/black"
+        android:enabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.164"
